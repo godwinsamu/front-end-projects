@@ -1,0 +1,122 @@
+body{
+    background-color:lightgreen;
+    display:flex;
+    justify-content:center;
+    cursor:pointer;
+}
+#container{
+    margin-top: 12rem;
+    background-color: lightseagreen;
+    width:40%;
+    text-align: center;
+    padding-bottom:60px;
+    text-wrap: wrap;
+    padding-top:20px;
+    border-radius:10px;
+    color:purple;
+    font-size: larger;
+    text-transform: capitalize;
+    cursor:pointer;
+
+}
+h2{
+    font-weight: bolder;
+}
+input{
+    padding-top:9px;
+    padding-bottom:9px;
+    margin-top:40px;
+    width:20rem;
+    text-align:left;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    outline: none;
+    
+}
+#result{
+    margin-top:40px;
+    color:midnightblue;
+    font-size: larger;
+    font-weight: bolder;
+}
+button {
+    text-transform: capitalize;
+    padding-top:9px;
+    padding-bottom:9px;
+    width:20rem;
+    font-size: 22px;
+    margin-top:40px;
+    letter-spacing: 1.3px;
+    font-weight:bold;
+    color:purple;
+    font-weight: bolder;
+    background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+    button:hover{
+        color:midnightblue;
+    }
+  
+  button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  

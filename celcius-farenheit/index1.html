@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcius to Farenheit Converter</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style1.css">
+    <div id="container">
+        <h2>Celcius(℃) To Farenheit(℉)</h2>
+        <div class="inputbox">
+            <input type="text" id="input" placeholder="Enter Celcius degree">
+        </div>
+        <div>
+        <button type="submit" onclick="action()">convert to farenheit</button>
+    </div>
+    <div id="result">
+
+    </div>
+    </div>
+    <script>
+        function action(){
+            let cel=Number(document.getElementById("input").value)
+            let far=(cel*9/5)+32
+            let result=document.getElementById("result")
+            result.innerHTML=far.toFixed(2) + "℉"
+
+        }
+    </script>
+</body>
+</html>
